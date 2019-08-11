@@ -2,13 +2,19 @@ from django.db import models
 
 # Create your models here.
 
-class News(models.Model):
-    author = models.CharField(max_length=30)
-    title = models.CharField(max_length=30)
-    description = models.TextField()
+class Novidades(models.Model):
+    autor = models.CharField(max_length=30)
+    titulo = models.CharField(max_length=30)
+    descricao = models.TextField()
+
+    def __str__(self):
+        return self.autor
+
+class Esporte(models.Model):
+    autor = models.CharField(max_length=30)
+    titulo = models.CharField(max_length=30)
+    descricao = models.TextField()
 
 
-class SportNews(models.Model):
-    author = models.CharField(max_length=30)
-    title = models.CharField(max_length=30)
-    description = models.TextField()
+    def __str__(self):
+        return self.autor

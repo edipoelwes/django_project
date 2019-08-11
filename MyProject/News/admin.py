@@ -1,3 +1,6 @@
 from django.contrib import admin
+from . models import Novidades, Esporte
 
-# Register your models here.
+
+admin.site.register(Novidades)
+admin.site.register(Esporte)
