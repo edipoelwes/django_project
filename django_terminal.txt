@@ -1,0 +1,41 @@
+instalando o django
+
+//criar uma venv
+	- python3 -m venv myvenv
+
+//Ativar a venv
+	- source myvenv/bin/activate
+
+//instalar o django com a venv ativada
+	- pip install django
+
+// verificar se o django foi instalado com sucesso
+	- python3
+	- import django
+	- django.VERSION
+
+	// sair do python
+		- exit()
+
+
+
+//iniciar um projeto
+	//ativar a venv
+		source "nome da venv"/bin/activate
+	//com a venv ativada
+		django-admin startproject "nome do projeto"
+
+
+	// inicializar o servidor django
+		// dentro da pasta do projeto
+		 - python manage.py runserver
+
+	// fazer as migracoes
+		- python manage.py migrate
+
+	// criar super usuario
+		- python manage.py createsuperuser
+
+
+	// criando um App
+		- python manage.py startapp "nome da aplicação"

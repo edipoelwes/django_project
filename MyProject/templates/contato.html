@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %} Contato {% endblock %}
+
+
+{%block content%}
+    <h1>Pagina de contato</h1>
+    <h3>Testando o bloco</h3>
+
+     <strong>{{email}}</strong>
+
+    {% for nome in nomes %}
+        <ul>
+            <li>{{nome}}</li>
+        </ul>
+    {% endfor %}
+{%endblock%}
